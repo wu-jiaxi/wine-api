@@ -28,7 +28,7 @@ class Api extends Component {
     render() {
         return (
             <div>
-                {this.state.data.main}
+                {this.state.data.main[0]}
             </div>
         )
     }
