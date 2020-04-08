@@ -7,7 +7,15 @@ class Api extends Component {
 
         this.state = {
             isLoaded: false,
-            data: []
+            data: [],
+            name:'',
+            year: '',
+            grapes: '',
+            country: '',
+            region:'',
+            description:'',
+            price:'',
+
         }
     }
 
