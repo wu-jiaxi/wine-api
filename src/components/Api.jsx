@@ -8,13 +8,13 @@ class Api extends Component {
         this.state = {
             isLoaded: false,
             data: [],
-            name:'',
+            name: '',
             year: '',
             grapes: '',
             country: '',
-            region:'',
-            description:'',
-            price:'',
+            region: '',
+            description: '',
+            price: '',
 
         }
     }
@@ -34,22 +34,23 @@ class Api extends Component {
     }
 
     showWineData = () => {
-        axios.get("http://myapi-profstream.herokuapp.com/api/51b102/wines")
-        .then(res => {
-            const wineAPI = res.data.id;
-            console.log('wine list --->', wineAPI.data.id)
+        /* axios.get("http://myapi-profstream.herokuapp.com/api/51b102/wines")
+            .then(res => {
+                const wineAPIData = res.data.id;
+                console.log('wine list --->', wineAPIData.data)
 
-            this.setState({ data: wineAPI })
-        })
+                this.setState({ data: wineAPIData, name: wineAPIData.name })
+            })
 
-        .catch(error => {
-            console.log('there is an error', error)
-        })
+            .catch(error => {
+                console.log('there is an error', error)
+            }) */
+        console.log("clicked")
     }
     render() {
         return (
             <div>
-                <h1 className="wine-list">{this.state.data.map((wineAPI, id) => <li key={id} className="wines-list"> <img src={wineAPI.picture}></img></li>)}</h1>
+                <h1 className="wine-list" onClick={this.showWineData}>{this.state.data.map((wineAPI, id) => <li key={id} className="wines-list"> <img src={wineAPI.picture} alt="wine"></img></li>)}</h1>
             </div>
         )
     }
