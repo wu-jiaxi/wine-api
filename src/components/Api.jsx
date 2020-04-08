@@ -25,10 +25,23 @@ class Api extends Component {
             })
     }
 
+    showWineData = () => {
+        axios.get("http://myapi-profstream.herokuapp.com/api/51b102/wines")
+        .then(res => {
+            const wineAPI = res.data.id;
+            console.log('wine list --->', wineAPI.data.id)
+
+            this.setState({ data: wineAPI })
+        })
+
+        .catch(error => {
+            console.log('there is an error', error)
+        })
+    }
     render() {
         return (
             <div>
-                <h1>{this.state.data.map((wineAPI, id) => <li key={id}> {wineAPI.name} </li>)}</h1>
+                <h1 className="wine-list">{this.state.data.map((wineAPI, id) => <li key={id} className="wines-list"> <img src={wineAPI.picture}></img></li>)}</h1>
             </div>
         )
     }
