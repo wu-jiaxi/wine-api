@@ -28,7 +28,7 @@ class Api extends Component {
     render() {
         return (
             <div>
-                {this.state.data.main[0]}
+                <h1>{this.state.data.map((wineAPI, id) => <li key={id}> {wineAPI.name} </li>)}</h1>
             </div>
         )
     }
