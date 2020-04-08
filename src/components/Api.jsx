@@ -12,7 +12,7 @@ class Api extends Component {
     }
 
     componentDidMount() {
-        axios.get("http://myapi-profstream.herokuapp.com/api/916e0a/persons")
+        axios.get("http://myapi-profstream.herokuapp.com/api/51b102/wines")
             .then(res => {
                 const wineAPI = res.data;
                 console.log('wine list --->', wineAPI)
