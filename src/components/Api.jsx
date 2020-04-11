@@ -8,6 +8,7 @@ class Api extends Component {
         this.state = {
             isLoaded: false,
             data: [],
+            id: '',
             name: '',
             year: '',
             grapes: '',
@@ -36,21 +37,24 @@ class Api extends Component {
     showWineData = () => {
         axios.get("http://myapi-profstream.herokuapp.com/api/51b102/wines")
             .then(res => {
-                const wineAPIData = res.data;
-                console.log('wine list --->', wineAPIData)
+                const wineAPI = res.data;
+                let whichWine = wineAPI.id 
 
-                this.setState({ data: wineAPIData, name: wineAPIData.name })
+                this.setState({ data: wineAPI, id: whichWine })
+                console.log(this.state.id)
             })
+
 
             .catch(error => {
                 console.log('there is an error', error)
             })
-
     }
+
     render() {
         return (
             <div>
                 <h1 className="wine-list" onClick={this.showWineData}>{this.state.data.map((wineAPI, id) => <li key={id} className="wines-list"> <img src={wineAPI.picture} alt="wine"></img></li>)}</h1>
+                <h1>{this.state.data.id}</h1>
             </div>
         )
     }
