@@ -34,15 +34,16 @@ class Api extends Component {
             })
     }
 
-    showWineData0 = () => {
-        console.log("show id",this.state.id)
+    showWineData = () => {
+        // want this function to setState and return elements using this.state
+        this.setState(this.state.data[0].name)
+        console.log(this.state.data[0].name)
     }
 
     render() {
         return (
             <div>
-                { <h1 className="wine-list" onClick={this.showWineData}>{this.state.data.map((wineAPI, id) => <li key={id} id={id} className="wines-list"> <img src={wineAPI.picture} alt="wine"></img></li>)}</h1> }
-                
+                {<h1 className="wine-list" onClick={this.showWineData}>{this.state.data.map((wineAPI, id) => <li key={id} id={id} className="wines-list"> <img src={wineAPI.picture} alt="wine"></img></li>)}</h1>}
             </div>
         )
     }
