@@ -6,8 +6,8 @@
 import React, { Component } from 'react';
 import Api from './components/Api'
 import './App.css';
-import Winelist from './components/Winelist'
-import { BrowserRouter as Router, /* Switch, */ Route } from 'react-router-dom';
+import Chateaude from './components/Chateaude'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
 class App extends Component {
@@ -17,8 +17,10 @@ class App extends Component {
       <Router>
         <div className="App">
           <Api />
-          <Route path="/about"></Route>
-          <Winelist />
+          <Switch>
+            <Route path="/4622" component={Chateaude} />
+            <Route path="/4623" component={Chateaude} />
+          </Switch>
         </div>
       </Router>);
   }

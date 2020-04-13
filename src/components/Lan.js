@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios'
 
-class Chateaude extends Component {
+class Lan extends Component {
     constructor(props) {
         super(props);
 
@@ -27,15 +27,15 @@ class Chateaude extends Component {
 
                 this.setState({
                     data: wineAPI,
-                    id: wineAPI[0].id,
-                    picture: wineAPI[0].picture,
-                    name: wineAPI[0].name,
-                    year: wineAPI[0].year,
-                    grapes: wineAPI[0].grapes,
-                    country: wineAPI[0].country,
-                    region: wineAPI[0].region,
-                    description: wineAPI[0].description,
-                    price: wineAPI[0].price
+                    id: wineAPI[1].id,
+                    picture: wineAPI[1].picture,
+                    name: wineAPI[1].name,
+                    year: wineAPI[1].year,
+                    grapes: wineAPI[1].grapes,
+                    country: wineAPI[1].country,
+                    region: wineAPI[1].region,
+                    description: wineAPI[1].description,
+                    price: wineAPI[1].price
                 })
             })
 
@@ -56,8 +56,9 @@ class Chateaude extends Component {
             <h3>{this.state.region}</h3>
             <h3>{this.state.description}</h3>
             <h3>{this.state.price}</h3>
+            <h3>you are here</h3>
         </div>);
     }
 }
 
-export default Chateaude;
+export default Lan;
