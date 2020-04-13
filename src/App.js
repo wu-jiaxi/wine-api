@@ -4,17 +4,19 @@
 // Make images clickable, 
 
 import React, { Component } from 'react';
-import Api from './Api'
+import Api from './components/Api'
 import './App.css';
+import Winelist from './components/Winelist'
 
 
 class App extends Component {
-  state = {  }
-  render() { 
-    return ( <div>
-      <Api name={this.state.id}/>
-    </div> );
+  state = {}
+  render() {
+    return (<div>
+      <Api name={this.state.id} />
+      <Winelist />
+    </div>);
   }
 }
- 
+
 export default App;
