@@ -4,8 +4,9 @@
 // Make images clickable, 
 
 import React, { Component } from 'react';
-import Api from './components/Api'
+import Api from './Api'
 import './App.css';
+
 
 class App extends Component {
   state = {  }

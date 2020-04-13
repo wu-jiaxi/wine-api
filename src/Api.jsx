@@ -34,21 +34,6 @@ class Api extends Component {
             })
     }
 
-    showWineData = () => {
-        // want this function to setState and return elements using this.state
-        axios.get("http://myapi-profstream.herokuapp.com/api/51b102/wines")
-            .then(res => {
-                const wineAPI = res.data;
-                console.log('wine list --->', wineAPI)
-
-                this.state.name = wineAPI[0].name
-                console.log(this.state.name)
-            })
-
-            .catch(error => {
-                console.log('there is an error', error)
-            })
-    }
 
     render() {
         return (
@@ -58,5 +43,4 @@ class Api extends Component {
         )
     }
 }
-
 export default Api;
