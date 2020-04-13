@@ -7,17 +7,17 @@ import React, { Component } from 'react';
 import Api from './components/Api'
 import './App.css';
 import Winelist from './components/Winelist'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, /* Switch, */ Route } from 'react-router-dom';
 
 
 class App extends Component {
   state = {}
   render() {
     return (
-      <Router> 
+      <Router>
         <div className="App">
           <Api />
-          <Route path="/about"
+          <Route path="/about"></Route>
           <Winelist />
         </div>
       </Router>);
