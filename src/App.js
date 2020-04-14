@@ -10,6 +10,7 @@ import Chateaude from './components/Chateaude'
 import Lan from './components/Lan'
 import Margerum from './components/Margerum'
 import Owen from './components/Owen'
+import Rex from './components/Rex'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
@@ -25,6 +26,7 @@ class App extends Component {
             <Route path="/4623" component={Lan} />
             <Route path="/4624" component={Margerum} />
             <Route path="/4625" component={Owen} />
+            <Route path="/4626" component={Rex} />
           </Switch>
         </div>
       </Router>);
