@@ -24,6 +24,12 @@ class Api extends Component {
                     data: wineAPI,
                     picture: wineAPI[0].picture,
                     picture1: wineAPI[1].picture,
+                    picture2: wineAPI[2].picture,
+                    picture3: wineAPI[3].picture,
+                    picture4: wineAPI[4].picture,
+                    picture5: wineAPI[5].picture,
+                    picture6: wineAPI[6].picture,
+                    picture7: wineAPI[7].picture,
                 })
             })
 
@@ -44,6 +50,24 @@ class Api extends Component {
                 </Link>
                 <Link to="/4623">
                     <img src={this.state.picture1} alt="LAN RIOJA CRIANZA"></img>
+                </Link>
+                <Link to="/4624">
+                    <img src={this.state.picture2} alt="MARGERUM SYBARITE"></img>
+                </Link>
+                <Link to="/4625">
+                    <img src={this.state.picture3} alt="OWEN ROE"></img>
+                </Link>
+                <Link to="/4626">
+                    <img src={this.state.picture4} alt="REX HILL"></img>
+                </Link>
+                <Link to="/4627">
+                    <img src={this.state.picture5} alt="VITICCIO CLASSICO RISERVA"></img>
+                </Link>
+                <Link to="/4628">
+                    <img src={this.state.picture6} alt="CHATEAU LE DOYENNE"></img>
+                </Link>
+                <Link to="/4629">
+                    <img src={this.state.picture7} alt="DOMAINE DU BOUSCAT"></img>
                 </Link>
             </div>
         )
