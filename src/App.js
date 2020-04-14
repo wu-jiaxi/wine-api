@@ -12,7 +12,9 @@ import Margerum from './components/Margerum'
 import Owen from './components/Owen'
 import Rex from './components/Rex'
 import Viticcio from './components/Viticcio'
+import Chateaule from './components/Chateaule'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 
 
 class App extends Component {
@@ -29,6 +31,7 @@ class App extends Component {
             <Route path="/4625" component={Owen} />
             <Route path="/4626" component={Rex} />
             <Route path="/4627" component={Viticcio} />
+            <Route path="/4628" component={Chateaule} />
           </Switch>
         </div>
       </Router>);
