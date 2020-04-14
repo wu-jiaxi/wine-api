@@ -11,3 +11,8 @@
 .wine-list :hover {
   cursor: pointer;
 }
+
+.wineDataForm{
+  display: flex;
+  flex-direction: column;
+}

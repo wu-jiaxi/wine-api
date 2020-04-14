@@ -2,6 +2,7 @@
 
 import React, { Component } from 'react';
 import axios from 'axios'
+import '/Users/dmac/Desktop/PerScholas/hw/wine-api/src/App.css';
 
 class Form extends Component {
     constructor(props) {
@@ -14,11 +15,11 @@ class Form extends Component {
 
     postWineData() {
         axios.post("http://myapi-profstream.herokuapp.com/api/51b102/wines", {
-            name: {}
+            name: "new wine"
         })
-            
+
             .then(res => {
-                
+
             })
 
             .catch(error => {
@@ -26,7 +27,7 @@ class Form extends Component {
             })
     }
     render() {
-        return (<div>
+        return (<div className="wineDataForm">
             <form>
                 <label>
                     Name:
