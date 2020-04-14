@@ -16,6 +16,7 @@ import Rex from './components/Rex'
 import Viticcio from './components/Viticcio'
 import Chateaule from './components/Chateaule'
 import Domaine from './components/Domaine'
+import Form from './components/Form'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
@@ -37,6 +38,7 @@ class App extends Component {
             <Route path="/4628" component={Chateaule} />
             <Route path="/4629" component={Domaine} />
           </Switch>
+          <Form />
         </div>
       </Router>);
   }
