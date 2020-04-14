@@ -43,7 +43,7 @@ class Api extends Component {
 
     render() {
         return (
-            <div>
+            <div className="wine-list">
                 {/* {<h1 className="wine-list" onClick={this.showWineData}>{this.state.data.map((wineAPI, id) => <li key={id} id={id} className="wines-list"> <img src={wineAPI.picture} alt="wine"></img></li>)}</h1>} */}
                 <Link to="/4622">
                     <img src={this.state.picture} alt="CHATEAU DE SAINT COSME"></img>

@@ -1,7 +1,9 @@
 // Connect the Api
 // Get Api data to display on DOM using .map
 // Get Images to display on DOM
-// Make images clickable, 
+// Make images clickable
+// Use routes to display data from API 
+// set up routes for each wine and attach them to links
 
 import React, { Component } from 'react';
 import Api from './components/Api'

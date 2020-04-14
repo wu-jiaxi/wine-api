@@ -48,14 +48,14 @@ class Viticcio extends Component {
     render() {
         return (<div>
             <img src={this.state.picture} alt=""></img>
-            <h3>{this.state.id}</h3>
-            <h3>{this.state.name}</h3>
-            <h3>{this.state.year}</h3>
-            <h3>{this.state.grapes}</h3>
-            <h3>{this.state.country}</h3>
-            <h3>{this.state.region}</h3>
-            <h3>{this.state.description}</h3>
-            <h3>{this.state.price}</h3>
+            <h3>ID: {this.state.id}</h3>
+            <h3>Name: {this.state.name}</h3>
+            <h3>Year: {this.state.year}</h3>
+            <h3>Grapes: {this.state.grapes}</h3>
+            <h3>Country: {this.state.country}</h3>
+            <h3>Region: {this.state.region}</h3>
+            <h3>Description: {this.state.description}</h3>
+            <h3>Price: {this.state.price}</h3>
         </div>);
     }
 }
